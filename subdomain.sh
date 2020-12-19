@@ -1,5 +1,5 @@
 dir=~/Recon/$1
-mkdir -p.$dir
+mkdir -p $dir
 cd /root/bug/Sublist3r && python3 sublist3r.py -d $1 -o $dir/$1_subdomains; 
 echo "subfinder"
 subfinder -d $1 | anew  $dir/$1_subdomains; 
